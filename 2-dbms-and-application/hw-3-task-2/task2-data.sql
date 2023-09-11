@@ -1,0 +1,34 @@
+INSERT INTO Planet
+VALUES (1, 'Planet_1', 456, 2);
+INSERT INTO Planet
+VALUES (2, 'Planet_2', 777, 14);
+INSERT INTO Planet
+VALUES (3, 'Planet_3', 450, 12);
+INSERT INTO Planet
+VALUES (4, 'Planet_4', 850, 2);
+
+INSERT INTO Commander
+VALUES (100, 'Commander_1');
+INSERT INTO Commander
+VALUES (200, 'Commander_2');
+INSERT INTO Commander
+VALUES (300, 'Commander_3');
+
+INSERT INTO Flight
+VALUES (1, 3, 100, '2034-10-10');
+INSERT INTO Flight
+VALUES (2, 1, 200, '2034-10-10');
+INSERT INTO Flight
+VALUES (3, 2, 300, '2034-10-10');
+INSERT INTO Flight
+VALUES (4, 1, 100, '2034-11-10');
+INSERT INTO Flight
+VALUES (5, 1, 100, '2034-12-10');
+INSERT INTO Flight
+VALUES (6, 4, 200, '2034-12-10');
+INSERT INTO Flight
+VALUES (7, 4, 300, '2035-12-10');
+INSERT INTO Flight
+VALUES (8, 4, 200, '2035-12-11');
+INSERT INTO Flight
+VALUES (9, 4, 100, '2035-12-12');

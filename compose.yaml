@@ -1,0 +1,30 @@
+services:
+  db:
+    image: postgres:latest
+    environment:
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - 5432:5432
+    networks:
+      - net
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@admin.com
+      - PGADMIN_DEFAULT_PASSWORD=admin
+    ports:
+      - 8080:80
+    networks:
+      - net
+    volumes:
+      - admin-data:/var/lib/pgadmin
+
+networks:
+  net:
+
+volumes:
+  db-data:
+  admin-data:
